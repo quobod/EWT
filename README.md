@@ -28,10 +28,9 @@ An Express website, themed with custom SCSS.
 _And just a little bit more ...._
 
 - _Package Scripts_
-	- test
 	- server
 	- sass
 	- test
 		- **_mocha_**
 	- **_windows platform_**
-		- cls: cls
+		- cls
