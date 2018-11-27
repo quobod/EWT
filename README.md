@@ -13,6 +13,9 @@ An Express website, themed with custom SCSS.
 
 **_What is more ...._**
 
+- nodejs [**_nodejs_**](https://github.com/sass/node-sass)
+    - node version: 11.2.0
+
 - node-sass for SCSS compilation [**_node-sass_**](https://github.com/sass/node-sass)
     - node-sass version: 4.10.0
 	
