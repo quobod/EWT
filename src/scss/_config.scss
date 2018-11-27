@@ -1,0 +1,199 @@
+$primary-color: #001;
+$secondary-color: #dff;
+$thirdary-color: #fdd;
+$info-color: #ade;
+$critical-color: #dcc;
+$show-home-image: true;
+$home-image: url('../graphics/default_background.jpg');
+$hole: url('../graphics/hole_in_paper.jpg');
+$background-opacity: 0.5;
+$bottom: 99vh;
+$top: -99vh;
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;	
+}
+
+@mixin easeIn {
+	transition: all 0.5s ease-in;	
+}
+
+@mixin background-with-image {
+	@if $show-home-image {
+		&#bg-img {
+			background: $home-image;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 0 -0;
+			background-size: cover;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background: rgba($primary-color, $background-opacity);
+			}
+		}
+	}
+}
+
+@mixin background-hole() {
+	@if $show-home-image {
+		/* &#bg-img {k */
+			background: $hole;
+			background-repeat: repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0.8rem;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background: rgba($primary-color, 0.7);
+			}
+		/* } */
+	}
+}
+
+@mixin background {			
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: rgba($primary-color, $background-opacity);
+	}
+}
+
+@mixin border($texture: solid, $size: 1px, $color: #77b) {
+	border: $texture $size $color;
+}
+
+@mixin border-with-radius($texture: solid, $size: 1px, $color: #77b, $bend: 10px) {
+	border: $texture $size $color;
+	border-radius: $bend;
+}
+
+@mixin make-border-with-radius($texture: solid, $size: 1px, $color: #77b, $top-right: 10px, $bottom-right: 10px, $top-left: 10px, $bottom-left: 10px) {
+	border: $texture $size $color;
+	border-top-left-radius: $top-left;
+	border-bottom-left-radius: $bottom-left;
+	border-top-right-radius: $top-right;
+	border-bottom-right-radius: $bottom-right;
+}
+
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaTn {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mediaMds {
+  @media screen and (min-width: 633px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mediaMe {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+@mixin mediaHeightMd {
+  @media screen and (max-height: 1004px)  {
+    @content;
+  }
+}
+
+@mixin mediaHeightSm {
+  @media screen and (max-height: 502px)  {
+    @content;
+  }
+}
+
+@mixin mediaHeightXs {
+  @media screen and (max-height: 300px)  {
+    @content;
+  }
+}
+
+/* Global Classes */
+.border {
+	border: 1px solid rgb(155,155,255);
+}
+
+.border-light {
+	border: 1px solid rgb(155,155,200);
+	border-radius: 10px;
+}
+
+.border-dark {
+	border: 0.2em solid rgb(55,55,107);
+	border-radius: 6px;
+}
+
+
+/* Element layout over-flow */
+.v-scroll {
+  overflow: scroll; }
+
+::-webkit-scrollbar {
+  width: 0;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
+
+::-webkit-scrollbar-thumb {
+  background: transparent; }
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none; }
+

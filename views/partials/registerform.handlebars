@@ -1,0 +1,40 @@
+<form method="post" action="/auth/register" class="register-form">
+	<div class="input-group">
+		<label class="input-group-label">
+			<i class="fa fa-envelope"></i>
+		</label>
+		
+		<input class="input-field" type="email" name="email" placeholder="Enter your email" required/>
+		<input class="input-field" type="email" name="email2" placeholder="Re-enter your email" required />
+	</div>
+		
+	<div class="input-group">
+		<label class="input-group-label">
+			<i class="fa fa-user"></i>
+		</label>
+		
+		<input class="input-field" type="text" name="firstName" placeholder="Enter your first name" required />
+		<input class="input-field" type="text" name="lastName" placeholder="Enter your last name" required />
+	</div>
+		
+	<div class="input-group">
+		<label class="input-group-label">
+			<i class="fa fa-lock"></i>
+		</label>
+		
+		<input class="input-field" type="password" name="pwd" placeholder="Create a password" required />
+		<input class="input-field" type="password" name="pwd2" placeholder="Re-enter the password" required />
+	</div>
+	
+	<div class="input-group">
+		<h4>Gender</h4>
+		
+		<input class="input" type="radio" name="gender" value="male"> Male
+		<input class="input" type="radio" name="gender" value="female"> Female
+		<input class="input" type="radio" name="gender" value="other" checked> Other
+	</div>
+	
+	<div class="input-group">
+		<input type="submit" class="button primary" value="Submit"/>
+	</div>
+</form>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{cfc (truncate title 22)}}</title>   
+		<link rel="shortcut icon" {{#if favicon }} href="{{favicon}}" {{else}}href="/favicon.ico"{{/if}} type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body id="bg-img" class="transition-down">
+		{{>callout}}
+		
+        <div class="layout">
+            {{{body}}}
+			{{>footer}}
+        </div>    
+    </body>
+		<script src="/js/resources.js"></script>
+		<script src="/js/menu_functionality.js"></script>
+		<script src="/js/main.js"></script>
+</html>

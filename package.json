@@ -1,0 +1,34 @@
+{
+  "name": "express_web_template_dark",
+  "version": "1.0.0",
+  "description": "General Express web application. Dark themed custom SCSS.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "cls": "cls",
+    "server": "cls & nodemon app",
+    "sass": "cls & node-sass -w src/scss/ -o public/css/ --recursive --output-style compressed --indent-type tab --error-bell"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quouob/EWT.git"
+  },
+  "author": "Rick Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quouob/EWT/issues"
+  },
+  "homepage": "https://github.com/quouob/EWT#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.10.0"
+  }
+}

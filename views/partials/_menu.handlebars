@@ -1,0 +1,102 @@
+<div id="signinModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="signin-closer">&times;</span>		
+		<ul class="signin-list">
+			<li class="nav-item facebook">						
+				<a href="/auth/facebook" class="nav-link">
+					Facebook Signin
+				</a>
+			</li>
+			
+			<li class="nav-item github">						
+				<a href="/auth/github" class="nav-link">
+					GitHub Signin
+				</a>
+			</li>
+			
+			<li class="nav-item google">						
+				<a href="/auth/google" class="nav-link">
+					Google Signin
+				</a>
+			</li>
+			
+			<li class="nav-item site">
+				<a href="/auth/login" class="nav-link">
+					User SignIn
+				</a>
+			</li>
+			
+			<li class="nav-item">
+				<a href="/auth/register" class="nav-link">
+					Register
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+{{#unless user}}
+<header class="global-menu">
+	<div class="menu-btn">
+		<div class="btn-line"></div>
+		<div class="btn-line"></div>
+		<div class="btn-line"></div>
+	</div>
+	
+	<nav class="menu">
+		<div class="menu-branding">
+			<div class="portrait"></div>
+		</div>
+		
+		<ul class="menu-nav">
+			<li class="nav-item home">
+				<a href="/" class="nav-link">
+					Home
+				</a>
+			</li>
+			
+			<li class="nav-item about">
+				<a href="/about" class="nav-link">
+					About Fantasy Football
+				</a>
+			</li>			
+		</ul>
+	</nav>
+</header>
+{{else}}
+<header class="global-menu">
+	<div class="menu-btn">
+		<div class="btn-line"></div>
+		<div class="btn-line"></div>
+		<div class="btn-line"></div>
+	</div>
+	
+	<nav class="menu">
+		<div class="menu-branding">
+			<div class="portrait"></div>
+		</div>
+		
+		<ul class="menu-nav logout">
+			<li class="nav-item">
+				<a href="/user" class="nav-link">
+					Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/auth/logout" class="nav-link logout-link">
+					Logout
+				</a>
+			</li>
+			
+			<li class="nav-item about">
+				<a href="/services" class="nav-link">
+					Services
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+{{/unless}}

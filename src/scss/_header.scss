@@ -1,0 +1,72 @@
+#header {
+	@include border-with-radius;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+	.search {
+		margin: 0;
+		padding: 0 0.2rem 0 0;
+		order: 3;
+		cursor: pointer;
+		@include easeOut();
+		
+		&:hover {
+			color: #001;
+			@include easeOut();
+		}
+	}
+	
+	.search-form {
+		transition-property: visibility, opacity 1s ease-in-out;
+		visibility: hidden;
+		opacity: 0;
+		margin: -0.2rem 0 0 0;
+		padding: 0;
+		order: 2;
+		@include easeOut();
+		
+		input {
+			margin: 0;
+			padding: 0;
+			height: 24px;
+			width: 50vw;
+		}
+		
+		&.show {			
+			visibility: visible;
+			opacity: 1;
+			transform: translate3d(-10%, 0, 0);
+			@include easeOut();
+		}
+	}
+	
+	.menu {
+		margin: 0.4rem 0 0 0;
+		padding: 0 0 0 0.2rem;
+		order: 1;
+		cursor: pointer;
+		
+		.btn-line {
+			width: 28px;
+			height: 3px;
+			margin: 0 0 5px 0;
+			padding: 0;
+			background: #fff;
+			@include easeOut;
+		}
+		
+		.menu-btn {		
+			&:hover {
+				.btn-line {
+					background: #001;
+					@include easeOut();
+				}
+			}
+		}
+		
+		.btn-line:nth-last-child(1) {
+			margin: 0;
+		}
+	}
+}
