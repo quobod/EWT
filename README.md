@@ -24,7 +24,7 @@ An Express website, themed with custom SCSS - project starter/template.
 	- express-handlebars version: 3.0.
 	
 - file change monitor nodemon [**_nodemon_**](https://github.com/remy/nodemon)
-	- express-handlebars version: 3.0.0
+	- nodemon version: 1.18.4
 	
 _And just a little bit more ...._
 
