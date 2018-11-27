@@ -1,7 +1,7 @@
 # _EWT_
 
-An Express website, themed with custom SCSS.
-- Customizable front-end but no back-end
+An Express website, themed with custom SCSS - project starter/template.
+- Customizable front-end and no back-end
 
 [About Developer](https://rickjw.herokuapp.com/)
 ![My Site](/public/graphics/logo.png)
