@@ -26,7 +26,7 @@ An Express website, themed with custom SCSS - project starter/template.
 - file change monitor nodemon [**_nodemon_**](https://github.com/remy/nodemon)
 	- nodemon version: 1.18.4
 	
-_And just a little bit more ...._
+_And just a little bit more ..._
 
 - _Package Scripts_
 	- server
