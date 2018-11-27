@@ -26,6 +26,9 @@ An Express website, themed with custom SCSS - project starter/template.
 - file change monitor nodemon [**_nodemon_**](https://github.com/remy/nodemon)
 	- nodemon version: 1.18.4
 	
+- mocha testing [**mocha**](https://github.com/mochajs/mocha)
+	- mocha version: 5.2.0
+	
 _And just a little bit more ..._
 
 - _Package Scripts_
