@@ -19,5 +19,19 @@ An Express website, themed with custom SCSS.
 - node-sass for SCSS compilation [**_node-sass_**](https://github.com/sass/node-sass)
     - node-sass version: 4.10.0
 	
-- express-handlebars view engine [**_express-handlebars_**](https://github.com/ericf/express-handlebars.git)
+- express-handlebars view engine [**_express-handlebars_**](https://github.com/ericf/express-handlebars)
+	- express-handlebars version: 3.0.
+	
+- file change monitor nodemon [**_nodemon_**](https://github.com/remy/nodemon)
 	- express-handlebars version: 3.0.0
+	
+_And a little bit more ...._
+
+- _Package Scripts_
+	- test
+	- server
+	- sass
+	- test
+		- **_mocha_**
+	- **_windows platform_**
+		- cls: cls
