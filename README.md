@@ -3,7 +3,7 @@
 An Express website, themed with custom SCSS.
 
 [About Developer](https://rickjw.herokuapp.com/)
-![My Site](/public/graphics/example.png)
+![My Site](/public/graphics/logo.png)
 
 #### **Installation**
 
