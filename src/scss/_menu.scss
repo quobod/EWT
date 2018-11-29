@@ -4,8 +4,8 @@
 	.menu-btn {
 		position: absolute;
 		z-index: 3;
-		left: 1rem;
-		top: 1rem;
+		margin: 0.4rem 0 0 0.5rem;
+		padding: 0;
 		cursor: pointer;
 		@include easeOut;
 		
