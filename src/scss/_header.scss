@@ -2,7 +2,7 @@
 	@include border-with-radius;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	
 	.search {
 		margin: 0;
@@ -36,7 +36,7 @@
 		&.show {			
 			visibility: visible;
 			opacity: 1;
-			transform: translate3d(-5%, 0, 0);
+			transform: translate3d(47vw, 0, 0);
 			@include easeOut();
 		}
 	}
