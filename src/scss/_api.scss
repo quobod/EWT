@@ -1,0 +1,47 @@
+/* // Smartphones */
+@include mediaSm {
+	main {
+		margin: 4rem auto;
+		max-height: 50vh;
+		overflow: auto;
+		display: grid;
+		grid-row-gap: 1rem;
+
+				
+		h2 {
+			position:absolute;
+			top: 4rem;
+		}
+		
+		#api-home {
+			display: grid;
+			grid-gap: 0;
+			overflow: auto;
+				margin: 4rem auto;
+					
+			.content {
+				padding: 0;
+				margin: 0;
+				display: grid;
+				 
+				p {
+					margin: 0;
+					padding: 0;
+				}
+			
+				.results-list {
+					padding: 0;
+					margin: 0;
+					/* list-style: none; */
+					overflow: auto;
+					
+					li {
+						padding: 0;
+						margin: 0; 
+						display: block;
+					}
+				}
+			}
+		}	
+	}
+}

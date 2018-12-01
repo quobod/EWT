@@ -94,7 +94,7 @@ $top: -99vh;
 
 
 // Set Text Color
-@function set-text-color($color) {
+@function set-text-color($color: #eef) {
   @if (lightness($color) > 40) {
     @return #000;
   } @else {

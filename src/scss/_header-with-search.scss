@@ -1,13 +1,13 @@
-#header {
+#header-with-search {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background: rgba(0,0,0,0.7);
-	border: none;
-	height: 5vh;
-
-	.menu {
+	border: none; 
+	
+	.menu { 
 		margin: 0.4rem 0 0 0;
 		padding: 0 0 0 0.2rem;
+		order: 1;
 	}
 }

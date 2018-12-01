@@ -1,0 +1,46 @@
+.search {
+		margin: 0;
+		padding: 0 0.2rem 0 0;
+		order: 3;
+		cursor: pointer;
+		@include easeOut();
+		
+		&:hover {
+			color: #001;
+			@include easeOut();
+		}
+		
+		&:mouse-down {
+			color: #eef;
+			@include easeOut();
+		}
+			
+	}
+	
+	.search-form {
+		transition-property: visibility, opacity 1s ease-in-out;
+		visibility: hidden;
+		opacity: 0;
+		margin: 0.2rem 0 0 0;
+		padding: 0;
+		order: 2;
+		@include easeOut();
+		
+		input {
+			margin: 0;
+			padding: 0;
+			height: 24px;
+			width: 50vw;
+		}
+		
+		&.show {			
+			visibility: visible;
+			opacity: 1;
+			transform: translate3d(30vw, 0, 0);
+			@include easeOut();
+		}
+		
+		.advanced-button {
+			display: none;
+		}
+	}

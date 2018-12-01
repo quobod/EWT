@@ -1,7 +1,6 @@
 main {
 	display: grid;
-	grid-row-gap: 1rem;
-	@include border;	
+	grid-row-gap: 1rem;	
 }
 
 #about {
@@ -21,7 +20,10 @@ main {
 		p {
 			margin: 0;
 			padding: 0;
-			@include border;
+		}
+		
+		.heading {
+			margin: 0 0 1.3rem 0;
 		}
 	}
 }

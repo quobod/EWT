@@ -1,3 +1,21 @@
-<form method="post" action="#" class="search-form">
+<form method="post" action="/api" class="search-form">
 	<input class="input" type="text" name="term" placeholder="Enter search term" required/>
+	
+	<label class="advanced-button">Advanced</label>
+	
+	<div class="advanced modal">	
+		<button class="advanced-search-close-button" aria-label="Dismiss alert" type="button" data-close>
+			<span aria-hidden="true">&times;</span>
+		</button>
+			<!-- Modal content -->
+		<div class="modal-content">
+			<div class="checkbox">
+				<input class="checkbox-input" type="checkbox" name="online" value="Deals online only">
+				<p class="para">Online Only Deals?</p>
+			</div>
+			<input class="input" type="number" min="1" max="25" name="radius" placeholder="Enter radius in miles"/>
+			<input class="input" type="number" min="1" max="25" name="perPage" placeholder="Enter results per page"/>		
+			<input class="input" type="text" name="location" placeholder="Enter location GPS, postal code, city etc"/>
+		</div>
+	</div>
 </form>

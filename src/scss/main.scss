@@ -1,9 +1,14 @@
 @import 'config';
 @import 'callout';
-@import 'header';
 @import 'home';
 @import 'menu';
 @import 'about';
+@import 'api';
+@import 'api-desktop-lg';
+@import 'header';
+@import 'header-with-search';
+@import 'search';
+@import 'search-form';
 
 /* General HTML defaults*/
 
@@ -51,6 +56,29 @@ h3 {
 		font-size: 1.21rem;
 		text-align: center;
 	}
+}
+
+/* Paragraph lead text */
+.lead {
+	color: #68f;
+	font-size: 1.8rem;
+	line-height: 0.9;
+	font-family: "times new roman";
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	opacity: 0.5;
+}
+
+p {
+	font-family: "times new roman";
+	font-weight: normal;
+	font-size: 1.3rem;
+	font-family: "arial narrow", arial, serif, cursive, georgia;
+	padding: 0;
+	margin: 0;
+	color: #a99;	
+	overflow: auto;
 }
 
 /* Default link style */
@@ -122,7 +150,7 @@ main {
 	text-align: center;
 	margin: 0;
 	padding: 1.3rem 0 0 0;
-	background: darken($primary-color, 10);
+	background: rgba(darken($primary-color, 10), 0.9);
 	color: set-text-color($primary-color);
 	font-weight: normal;
 	font-size: 0.7rem;
@@ -132,5 +160,46 @@ main {
 	height: 60px;
 }
 
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100vw; /* Full width */
+	height: 100vh; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: rgba(darken($primary-color, 5), 0.7);
+	margin: 2rem 11%; /* 15% from the top and centered */
+	padding: 0 20px;
+	@include border-with-radius;
+	width: 80%; /* Could be more or less, depending on screen size */
+	height: 80vh;
+	overflow: auto;	
+}
+
+/* The Close Button */
+.modal-closer {
+	@include easeOut();
+	color: #aaa;
+	float: right;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.modal-closer:hover,
+.modal-closer:focus {
+	@include easeOut();
+	color: #001;
+	text-decoration: none;
+	cursor: pointer;
+}
 /* Import media queries to handle the platform layout - e.g mobile layout, laptop/tablet and desktop layouts */
 @import 'mobile';
