@@ -16,14 +16,47 @@ main {
 	.content {
 		padding: 0;
 		margin: 0;
+		text-align: center;
 		 
 		p {
 			margin: 0;
 			padding: 0;
+			position: relative;
 		}
 		
 		.heading {
 			margin: 0 0 1.3rem 0;
+		}
+	}
+}
+
+/* // Smartphones */
+@include mediaSm {
+	
+	main {
+		display: grid;
+		grid-row-gap: 1rem;	
+	}
+
+	#about {
+		display: grid;
+		grid-gap: 0;
+		
+		.heading {
+			padding: 0;
+			margin: 1rem 0 0 0;
+			width: 100%;
+		}
+		
+		.content {
+			padding: 0;
+			margin: 0;
+			 
+			p {
+				margin: 12rem auto;
+				padding: 0;
+				position: relative;
+			}
 		}
 	}
 }

@@ -147,3 +147,25 @@
 	}
 }
 
+/* // Smartphones */
+@include mediaMd {
+	/* Menu Overlay */
+	.menu {		
+		&-branding {
+			background: $primary-color;
+			transform: translate3d(0, 100%, 0);
+			@include easeOut;
+
+			.portrait {
+				width: 150px;
+				height: 150px;
+				@include background-hole;
+				background-repeat: no-repeat;
+				background-position: center, center;
+				border-radius: 50%;
+				border: solid 3px $secondary-color;
+			}
+		}
+		
+	}
+}

@@ -11,3 +11,20 @@
 		padding: 0 0 0 0.2rem;
 	}
 }
+
+/* // Smartphones */
+@include mediaSm {
+	#header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background: rgba(0,0,0,0.7);
+		border: none;
+		height: 6.3vh;
+
+		.menu {
+			margin: 0.4rem 0 0 0;
+			padding: 0 0 0 0.2rem;
+		}
+	}
+}
